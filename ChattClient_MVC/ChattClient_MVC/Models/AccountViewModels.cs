@@ -49,8 +49,9 @@ namespace ChattClient_MVC.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
+        [Display(Name = "Användarnamn")]
+        //[EmailAddress]
+        //HÄR VILL DEN HA EMAIL MEN MAN LOGGAR IN MED ANVÄNDARNAMNET? FUCK MVC
         public string Email { get; set; }
 
         [Required]
@@ -68,6 +69,10 @@ namespace ChattClient_MVC.Models
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "UserName")]
+        public string UserName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]

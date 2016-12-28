@@ -22,3 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.user-list {
+    border-right: solid;
+    height: 600px;
+}
+
+.chatt-box {
+    max-height: 600px;
+    height: 600px;
+}
+
+.chatt-input {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.chatt-text {
+    width: 95%;
+}
+
+.hr-options {
+    border: solid 1px dimgrey !important;
+}

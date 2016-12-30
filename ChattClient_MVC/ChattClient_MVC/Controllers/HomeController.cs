@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ChattClient_MVC.Models;
+using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,7 @@ namespace ChattClient_MVC.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
             return View();
@@ -25,6 +28,16 @@ namespace ChattClient_MVC.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        [HttpPost]
+        public string SendMessage(string textInput)
+        {
+            var userId = User.Identity.GetUserId();
+
+            var currentUser = contex
+
+            return textInput;
         }
     }
 }

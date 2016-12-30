@@ -17,8 +17,10 @@
         <p>massa chatt-text här?</p>
         <div class="chatt-input">
             <hr class="hr-options" />
-            <input class="chatt-text" type="text" />
-            <button> > </button>
+            <form action="~/Home/SendMessage" method="post">
+                <input class="chatt-text" type="text" name="textInput" value="textInput" />
+                <button type="submit"> > </button>
+            </form>
         </div>
 
     </div>

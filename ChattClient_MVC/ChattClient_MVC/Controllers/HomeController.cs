@@ -13,7 +13,11 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
-            return View();
+            ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
+
+            var allMessages = serviceRef.GetAll();
+
+            return View(allMessages.ToList());
         }
 
         public ActionResult About()
@@ -31,13 +35,24 @@ namespace ChattClient_MVC.Controllers
         }
 
         [HttpPost]
-        public string SendMessage(string textInput)
+        public void SendMessage(string textInput)
         {
+            ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
+
             var userId = User.Identity.GetUserId();
+            var currentUser = context.Users.FirstOrDefault(x => x.Id == userId);
 
-            var currentUser = contex
+            var timeStamp = DateTime.Now;
+            serviceRef.SendMessage(textInput, userId, currentUser.UserName, timeStamp);
+        }
+        [HttpGet]
+        public ActionResult GetMessages()
+        {
+            ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
 
-            return textInput;
+            var allMessages = serviceRef.GetAll();
+
+            return View(allMessages.ToList());
         }
     }
 }

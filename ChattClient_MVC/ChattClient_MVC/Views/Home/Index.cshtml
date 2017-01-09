@@ -1,12 +1,9 @@
-﻿@{
+﻿@model IEnumerable<ChattClient_MVC.ChattServiceReference.Message>
+
+
+@{
     ViewBag.Title = "Home Page";
 }
-
-<div>
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-</div>
-
 <div class="row chatt-box">
     <div class="col-md-3 user-list">
         <h2>Användare</h2>
@@ -14,7 +11,14 @@
     </div>
     <div class="col-md-9 chatt-box">
         <h2>Chattruta</h2>
-        <p>massa chatt-text här?</p>
+        @foreach (var message in Model)
+            {
+            <p>@message.TimeStamp</p>
+            <p>@message.UserName:</p>
+            <p>@message.MessageText</p>
+            <hr />
+
+        }
         <div class="chatt-input">
             <hr class="hr-options" />
             <form action="~/Home/SendMessage" method="post">

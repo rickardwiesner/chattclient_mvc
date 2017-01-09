@@ -4,7 +4,36 @@
 @{
     ViewBag.Title = "Home Page";
 }
-<div class="row chatt-box">
+
+<div class="chat">
+    <div class="chat-header">
+        <h1>Chat</h1>
+    </div>
+    <div class="chat-history">
+        @foreach (var item in Model)
+        {
+            <ul>
+                <li class="chat-item">
+                    <div class="message">
+                        <span class="message__user-name">@item.UserName</span>
+                        <time class="message__time">
+                            @item.TimeStamp
+                        </time>
+                        <p class="message__text">@item.MessageText</p>
+                    </div>
+            </ul>
+        }
+
+    </div>
+    <div class="chat-controls">
+        <textarea class="chat-controls__textarea" rows="2" placeholder="Type your message"></textarea>
+        <div class="btns-row">
+            <a href="#" class="chat-controls__btn">Send</a>
+        </div>
+    </div>
+</div>
+
+@*<div class="row chatt-box">
     <div class="col-md-3 user-list">
         <h2>Användare</h2>
         <p>Namnen här kanske?</p>
@@ -28,4 +57,4 @@
         </div>
 
     </div>
-</div>
+</div>*@

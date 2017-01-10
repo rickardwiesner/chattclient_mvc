@@ -13,6 +13,7 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
+            var test = "s";
             RobertRollTheDice.DiceServiceClient serviceDice = new RobertRollTheDice.DiceServiceClient();
 
             ViewBag.number = serviceDice.GetNumbers();

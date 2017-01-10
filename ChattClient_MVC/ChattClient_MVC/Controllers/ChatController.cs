@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace ChattClient_MVC.Controllers
 {
+    [Authorize]
     public class ChatController : Controller
     {
         ApplicationDbContext context = new ApplicationDbContext();

@@ -214,6 +214,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\RobertRollTheDice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +251,12 @@
     <None Include="Service References\ChattServiceReference\configuration91.svcinfo" />
     <None Include="Service References\ChattServiceReference\configuration.svcinfo" />
     <None Include="Service References\ChattServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RobertRollTheDice\configuration91.svcinfo" />
+    <None Include="Service References\RobertRollTheDice\configuration.svcinfo" />
+    <None Include="Service References\RobertRollTheDice\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -295,6 +306,13 @@
     </None>
     <Content Include="Views\Home\GetMessages.cshtml" />
     <Content Include="Views\Chat\Index.cshtml" />
+    <None Include="Service References\RobertRollTheDice\service.wsdl" />
+    <None Include="Service References\RobertRollTheDice\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RobertRollTheDice\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -312,6 +330,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ChattServiceReference\" />
+    <WCFMetadataStorage Include="Service References\RobertRollTheDice\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

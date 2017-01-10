@@ -13,6 +13,8 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
+            RobertRollTheDice.DiceServiceClient serviceDice = new RobertRollTheDice.DiceServiceClient();
+
             //ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
 
             //var allMessages = serviceRef.GetAll();

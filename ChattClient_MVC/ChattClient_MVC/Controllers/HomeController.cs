@@ -13,11 +13,11 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
-            ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
+            //ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
 
-            var allMessages = serviceRef.GetAll();
+            //var allMessages = serviceRef.GetAll();
 
-            return View(allMessages.ToList());
+            return View();
         }
 
         public ActionResult About()

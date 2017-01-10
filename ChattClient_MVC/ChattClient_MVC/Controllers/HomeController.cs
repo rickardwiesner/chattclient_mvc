@@ -15,6 +15,7 @@ namespace ChattClient_MVC.Controllers
         {
             RobertRollTheDice.DiceServiceClient serviceDice = new RobertRollTheDice.DiceServiceClient();
 
+            ViewBag.number = serviceDice.GetNumbers();
             //ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
 
             //var allMessages = serviceRef.GetAll();

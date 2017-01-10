@@ -254,6 +254,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\RobertRollTheDice\item.disco" />
     <None Include="Service References\RobertRollTheDice\configuration91.svcinfo" />
     <None Include="Service References\RobertRollTheDice\configuration.svcinfo" />
     <None Include="Service References\RobertRollTheDice\Reference.svcmap">
@@ -306,11 +307,11 @@
     </None>
     <Content Include="Views\Home\GetMessages.cshtml" />
     <Content Include="Views\Chat\Index.cshtml" />
-    <None Include="Service References\RobertRollTheDice\service.wsdl" />
-    <None Include="Service References\RobertRollTheDice\service.xsd">
+    <None Include="Service References\RobertRollTheDice\DiceService.wsdl" />
+    <None Include="Service References\RobertRollTheDice\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RobertRollTheDice\service1.xsd">
+    <None Include="Service References\RobertRollTheDice\item1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

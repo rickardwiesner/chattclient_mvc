@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c46607f9-c871-4bbf-9666-e4cde9924bec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fb322089-3f35-4c10-a2b0-693282870834" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="8a9d362a-3854-472f-8b48-6b9aaf59abbc" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="57b67766-fdb5-46f3-8a0b-0045f1813e49" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="241c4365-2dde-4e62-b04b-35996d02e1f2" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/mex" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="017d1d20-e145-4c22-84ea-61d0a02ac2fa" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/?xsd=xsd0" />
+    <MetadataFile FileName="DiceService.wsdl" MetadataType="Wsdl" ID="24a7bba5-4e6b-4db7-9777-3c8abbb8429b" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="708de3f7-7793-4c58-8d81-c1e644f32d57" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="35df1c13-6826-4263-a6f6-2025fd9a943e" SourceId="1" SourceUrl="http://172.22.101.148:8733/Design_Time_Addresses/ServiceLibrary/DiceService/?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

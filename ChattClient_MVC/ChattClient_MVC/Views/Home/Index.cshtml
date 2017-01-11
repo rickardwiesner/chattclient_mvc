@@ -1,8 +1,35 @@
-﻿
+﻿@model IEnumerable<ChattClient_MVC.LitosServiceReference.Product>
 
 
-@{
-    ViewBag.Title = "Home Page";
-}
+<div>
+    @{
+        ViewBag.Title = "Home Page";
+    }
+    <div class="col-md-12"></div>
+    <div class="col-md-5">
 
-@ViewBag.number
+    </div>
+    <div class="col-md-5">
+        <button id="btn" type="button" class="btn btn-success">ROLL THE DICE</button>
+        <div>
+            <h2 id="diceResult"></h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                @{
+                    foreach (var product in Model)
+                    {
+                        <th>@product.Title
+                        <th />
+                        <th><img src="@product.ImageUrl" /></th>
+                        <th>@product.Price</th>
+                        <th>@product.Description</th>
+                        }
+                        }
+                    </tr>
+                </table>
+            </div>
+        </div>

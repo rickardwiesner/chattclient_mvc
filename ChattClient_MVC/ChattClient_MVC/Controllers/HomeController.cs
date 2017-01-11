@@ -13,14 +13,11 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
-            RobertRollTheDice.DiceServiceClient serviceDice = new RobertRollTheDice.DiceServiceClient();
+            LitosServiceReference.ProductServiceClient serviceRef = new LitosServiceReference.ProductServiceClient();
 
-            ViewBag.number = serviceDice.GetNumbers();
-            //ChattServiceReference.ChattServiceClient serviceRef = new ChattServiceReference.ChattServiceClient();
+            var products = serviceRef.GetProducts();
 
-            //var allMessages = serviceRef.GetAll();
-
-            return View();
+            return View(products.ToList());
         }
 
         public ActionResult About()
@@ -56,6 +53,26 @@ namespace ChattClient_MVC.Controllers
             var allMessages = serviceRef.GetAll();
 
             return View(allMessages.ToList());
+        }
+
+        [HttpGet]
+        public int RollTheDice()
+        {
+            RobertRollTheDice.DiceServiceClient serviceDice = new RobertRollTheDice.DiceServiceClient();
+
+            var numberOnDice = serviceDice.GetNumbers();
+
+            return numberOnDice;
+        }
+
+        [HttpGet]
+        public string GetQuote()
+        {
+            QuoteServiceRef.QuoteServiceClient serviceRef = new QuoteServiceRef.QuoteServiceClient();
+
+            var quote = serviceRef.Get();
+
+            return quote;
         }
     }
 }

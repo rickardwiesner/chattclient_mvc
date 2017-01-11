@@ -214,6 +214,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\LitosServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\QuoteServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\RobertRollTheDice\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -244,6 +254,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\RollTheDice.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Service References\ChattServiceReference\ChattClient_MVC.ChattServiceReference.Message.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -254,10 +265,43 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Service References\LitosServiceReference\ChattClient_MVC.LitosServiceReference.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\LitosServiceReference\service.wsdl" />
+    <None Include="Service References\LitosServiceReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LitosServiceReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LitosServiceReference\SWFCServiceLibrary.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QuoteServiceRef\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QuoteServiceRef\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QuoteServiceRef\QuoteService.wsdl" />
     <None Include="Service References\RobertRollTheDice\item.disco" />
     <None Include="Service References\RobertRollTheDice\configuration91.svcinfo" />
     <None Include="Service References\RobertRollTheDice\configuration.svcinfo" />
     <None Include="Service References\RobertRollTheDice\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\QuoteServiceRef\item.disco" />
+    <None Include="Service References\QuoteServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\QuoteServiceRef\configuration.svcinfo" />
+    <None Include="Service References\QuoteServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LitosServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\LitosServiceReference\configuration.svcinfo" />
+    <None Include="Service References\LitosServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -331,6 +375,8 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ChattServiceReference\" />
+    <WCFMetadataStorage Include="Service References\LitosServiceReference\" />
+    <WCFMetadataStorage Include="Service References\QuoteServiceRef\" />
     <WCFMetadataStorage Include="Service References\RobertRollTheDice\" />
   </ItemGroup>
   <PropertyGroup>

@@ -16,20 +16,28 @@
         </div>
     </div>
 
-    <div class="container">
-        <table>
-            <tr>
-                @{
-                    foreach (var product in Model)
-                    {
-                        <th>@product.Title
-                        <th />
-                        <th><img src="@product.ImageUrl" /></th>
-                        <th>@product.Price</th>
-                        <th>@product.Description</th>
-                        }
-                        }
-                    </tr>
-                </table>
-            </div>
+    <div class="col-md-5">
+
+    </div>
+    <div class="col-md-5">
+        <button id="quoteBtn" type="button" class="btn btn-success">MOVIE QUOTE?</button>
+        <div>
+            <h2 id="quote"></h2>
         </div>
+    </div>
+
+    @*<div class="row">
+            @foreach (var item in Model)
+            {
+
+                <div class="col-lg-6 col-sm-6 product-space">
+                    <h4>@item.Title</h4>
+                    <img src="@item.ImageUrl" alt="Alternate Text" class="img" />
+                    <p>@item.Price kr</p>
+                    <p>@item.Description</p>
+                </div>
+
+
+            }
+        </div>*@
+</div>

@@ -13,11 +13,13 @@ namespace ChattClient_MVC.Controllers
         ApplicationDbContext context = new ApplicationDbContext();
         public ActionResult Index()
         {
-            LitosServiceReference.ProductServiceClient serviceRef = new LitosServiceReference.ProductServiceClient();
+            //    LitosServiceReference.ProductServiceClient serviceRef = new LitosServiceReference.ProductServiceClient();
 
-            var products = serviceRef.GetProducts();
+            //    var products = serviceRef.GetProducts();
 
-            return View(products.ToList());
+            //    return View(products.ToList());
+
+            return View();
         }
 
         public ActionResult About()

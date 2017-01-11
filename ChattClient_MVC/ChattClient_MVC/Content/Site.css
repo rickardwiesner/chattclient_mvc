@@ -136,3 +136,12 @@ textarea {
 li:hover {
     color: #999988 !important;
 }
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-space {
+    margin-bottom: 30px;
+}

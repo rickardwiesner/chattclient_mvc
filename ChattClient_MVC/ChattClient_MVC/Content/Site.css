@@ -51,8 +51,8 @@ textarea {
 
 
 .chat {
-    width: 750px;
-    height: 800px;
+    width: 350px;
+    height: 650px;
     margin: 0 auto;
     background: #fff;
     border-radius: 5px;
@@ -68,7 +68,7 @@ textarea {
 }
 
 .chat-history {
-    height: 550px;
+    height: 420px;
     overflow-y: auto;
     padding: 20px;
 }
@@ -152,4 +152,8 @@ li:hover {
 
 .product-space {
     margin-bottom: 30px;
+}
+
+.no-padding {
+    padding: 0px;
 }

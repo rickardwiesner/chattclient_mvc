@@ -1,4 +1,5 @@
-﻿@model IEnumerable<ChattClient_MVC.LitosServiceReference.Product>
+﻿@*@model IEnumerable<ChattClient_MVC.LitosServiceReference.Product>*@
+@model IEnumerable<ChattClient_MVC.Controllers.Products>
 
 
 <div>
@@ -36,8 +37,33 @@
                     <p>@item.Price kr</p>
                     <p>@item.Description</p>
                 </div>
-
-
             }
         </div>*@
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Produktnamn</th>
+                    <th>Pris</th>
+                    <th>Beskrivning</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+
+                        <td class="image-size-in-table"> <img src="@product.ImageUrl" alt="Alternate Text" class="img image-size-in-table" /> </td>
+                        <td>@product.Title</td>
+                        <td>@product.Price kr</td>
+                        <td>@product.Description</td>
+                        <td><button class="btn btn-danger" disabled> Slut i lager</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

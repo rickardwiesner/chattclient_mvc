@@ -18,8 +18,15 @@ namespace ChattClient_MVC.Controllers
             //    var products = serviceRef.GetProducts();
 
             //    return View(products.ToList());
+            var products = new List<Products>();
+            products.Add(new Products { Description = "Test-beskrivning", Price = 100, Title = "NAMN på produkt", ImageUrl = "http://www.businessnewsdaily.com/images/i/000/008/678/original/michael-scott-the-office.PNG?1432126986" });
+            products.Add(new Products { Description = "Test-beskrivning fgh fgh", Price = 100, Title = "NAMN5 på produkt", ImageUrl = "http://www.businessnewsdaily.com/images/i/000/008/678/original/michael-scott-the-office.PNG?1432126986" });
+            products.Add(new Products { Description = "Test-beskrivning asdasgfh fdgh", Price = 100, Title = "NAMN2 på produkt", ImageUrl = "http://www.businessnewsdaily.com/images/i/000/008/678/original/michael-scott-the-office.PNG?1432126986" });
+            products.Add(new Products { Description = "Test-beskrivning fgh fgh ", Price = 100, Title = "NAMN2 på produkt", ImageUrl = "http://www.businessnewsdaily.com/images/i/000/008/678/original/michael-scott-the-office.PNG?1432126986" });
+            products.Add(new Products { Description = "Test-beskrivning fghfghf ", Price = 100, Title = "NAMN3 på produkt", ImageUrl = "http://www.businessnewsdaily.com/images/i/000/008/678/original/michael-scott-the-office.PNG?1432126986" });
 
-            return View();
+
+            return View(products);
         }
 
         public ActionResult About()
@@ -76,5 +83,13 @@ namespace ChattClient_MVC.Controllers
 
             return quote;
         }
+    }
+
+    public class Products
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Price { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
